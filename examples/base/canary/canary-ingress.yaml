@@ -4,9 +4,10 @@ metadata:
   name: canary-demo
   annotations:
     kubernetes.io/ingress.class: gce
+    kubernetes.io/ingress.global-static-ip-name: mozweek-demo
 spec:
   rules:
-  - host: canary.dev.argoproj.io
+  - host: demo.argocd.global.mozgcp.net
     http:
       paths:
       - path: /
